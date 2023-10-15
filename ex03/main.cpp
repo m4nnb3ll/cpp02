@@ -6,7 +6,7 @@
 /*   By: abelayad <abelayad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 10:59:22 by abelayad          #+#    #+#             */
-/*   Updated: 2023/10/15 22:28:39 by abelayad         ###   ########.fr       */
+/*   Updated: 2023/10/15 22:44:16 by abelayad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,6 @@
 
 int main( void )
 {
-
-	// Point t1(0.69, 2.14), t2(1.1, -0.42);
-	// std::cout << "The determinant is: " << det(t1, t2) << std::endl;
-
 	Point a(0, 0);
 	Point b(4, 0);
 	Point c(2, 3);
