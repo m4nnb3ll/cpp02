@@ -6,7 +6,7 @@
 /*   By: abelayad <abelayad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 12:16:18 by abelayad          #+#    #+#             */
-/*   Updated: 2023/10/04 11:18:10 by abelayad         ###   ########.fr       */
+/*   Updated: 2023/10/15 22:13:42 by abelayad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ Fixed::~Fixed(void)
 }
 
 Fixed::Fixed(const Fixed &fixed)
+	: m_whole(fixed.getRawBits())
 {
 	std::cout << "Copy constructor called" << std::endl;
-	*this = fixed;
 }
 
 Fixed	&Fixed::operator=(const Fixed &rhs)
@@ -43,7 +43,7 @@ int	Fixed::getRawBits(void) const
 	return (m_whole);
 }
 
-void	Fixed::setRawBits(int raw)
+void	Fixed::setRawBits(int const raw)
 {
 	std::cout << "setRawBits member function called" << std::endl;
 	m_whole = raw;
